@@ -1,9 +1,4 @@
-from lib.logger import Logger
+from .app import App
 
+__all__ = ['App']
 
-class App:
-    def __init__(self):
-        self.logger= Logger('APP')
-
-    def run(self):
-        self.logger.info('App is running...')
